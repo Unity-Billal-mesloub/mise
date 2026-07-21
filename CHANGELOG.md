@@ -1,5 +1,40 @@
 # Changelog
 
+## [2026.7.12](https://github.com/jdx/mise/compare/v2026.7.11..v2026.7.12) - 2026-07-21
+
+### 🚀 Features
+
+- **(config)** add MISE_SAFE mode to block repo-controlled code execution by @jdx in [#11146](https://github.com/jdx/mise/pull/11146)
+- **(core)** verify node/swift signatures in-process with rpgp, drop external gpg by @jdx in [#11148](https://github.com/jdx/mise/pull/11148)
+- **(lock)** add `mise lock --bump` to advance lockfile selectors by @jdx in [#11145](https://github.com/jdx/mise/pull/11145)
+- **(npm)** resolve versions over HTTP, groundwork for embedding aube by @jdx in [#11147](https://github.com/jdx/mise/pull/11147)
+- **(oci)** built-in registry push client, drop skopeo/crane dependency by @jdx in [#11132](https://github.com/jdx/mise/pull/11132)
+- **(oci)** chunked uploads, retries, cross-repo mounts, progress bars by @jdx in [#11141](https://github.com/jdx/mise/pull/11141)
+- **(oci)** reuse unchanged tool layers from the previously pushed image by @jdx in [#11142](https://github.com/jdx/mise/pull/11142)
+- **(oci)** multi-arch image index support (--update-index) by @jdx in [#11144](https://github.com/jdx/mise/pull/11144)
+
+### 🐛 Bug Fixes
+
+- **(config)** align env and vars array parsing by @risu729 in [#11060](https://github.com/jdx/mise/pull/11060)
+- **(config)** avoid panic when config set descends into a non-table value by @Marukome0743 in [#11153](https://github.com/jdx/mise/pull/11153)
+- **(env)** resolve a real POSIX bash for _.source on Windows by @JamBalaya56562 in [#11097](https://github.com/jdx/mise/pull/11097)
+- **(link)** clear stale incomplete marker when linking a tool by @Marukome0743 in [#11150](https://github.com/jdx/mise/pull/11150)
+- extend match of Linux musl asset for Android by @bltavares in [#10730](https://github.com/jdx/mise/pull/10730)
+
+### 🧪 Testing
+
+- **(oci)** e2e happy-path push coverage against a real registry by @jdx in [#11140](https://github.com/jdx/mise/pull/11140)
+
+### 📦️ Dependency Updates
+
+- update namespacelabs/nscloud-cache-action digest to c5f8dab by @renovate[bot] in [#11079](https://github.com/jdx/mise/pull/11079)
+- avoid tool installation during dry runs by @risu729 in [#11016](https://github.com/jdx/mise/pull/11016)
+- remove orphaned npm dependencies by @risu729 in [#11100](https://github.com/jdx/mise/pull/11100)
+
+### 📦 Registry
+
+- disable cargo-release test by @jdx in [#11143](https://github.com/jdx/mise/pull/11143)
+
 ## [2026.7.11](https://github.com/jdx/mise/compare/v2026.7.10..v2026.7.11) - 2026-07-20
 
 ### 🐛 Bug Fixes
